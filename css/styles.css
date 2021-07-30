@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav ul a,
+nav .brand-logo{
+	color: #444;
+}
+
+.container {
+	width: 70%;
+}
+
+.navhead {
+
+}
+
+.button{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.btn{
+	padding: 20px 60px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+{
+  box-sizing: border-box;
+}
+/* For mobile phones: */
+[class*="col m"] {
+  width: 100%;
+}
