@@ -21,6 +21,50 @@
 			max-width: 230px;
 		}
 	}
+
+			.parallax {
+  /* The image used */
+  background-image: url("logo.jpg");
+
+  /* Set a specific height */
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10;
+  height: 115Vh;
+}
+	.color-overlay	{
+		width: 100%;
+		height: 115vh;
+		background: #fff;
+		opacity: .6;
+		position: absolute;
+		 
+
+	}
+
+	.clearfix{
+		width: 100%
+		height: 0;
+		padding-bottom: 56.25%;
+		position: relative;
+	}
+			.clearfix iframe {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+
+			}
+
+		}
+	.footer{
+		width: 100%;
+		height: 120vh;
+		position: absolute;
+	}
 </style>
 
 	<nav class="light-green darken-2">
@@ -45,7 +89,7 @@
 					<li tabindex="0"><a href="code-of-business.html">Code of Conduct</a></li>
 					<li tabindex="0"><a href="sustainability.html">Sustainability Report</a></li>
 					<li tabindex="0"><a href="people_behind.html">Board of Trustees, Officers & Staff</a></li>
-					<li tabindex="0"><a href="people_behind.html">Annual Corporate Governance Report</a></li>
+					<li tabindex="0"><a href="acgr.html">Annual Corporate Governance Report</a></li>
 					<li tabindex="0"><a href="amla.html">AMLA</a></li>
 					<li tabindex="0"><a href="other-supporting.html">Other Supporting Docs to ACGR</a></li>
 
@@ -62,7 +106,11 @@
 		</div>
 	</nav>
 <main>
+						<div class="parallax">
+						<div class="color-overlay">	
 	<div class="section">
+	</div>
+</div>
 		<div class="container">
 			<div class="row">
 				<div class="col m12">
@@ -71,8 +119,7 @@
 							<div class="row">
 								<div class="col m12">
 									<h3 class="black-text darken-2">ANNUAL REPORT</h3>
-								</div>
-								<div class="clearfix"></div>
+								<div class="clearfix">
 								<div class="frame"><iframe id="iframe1" name="iframe1" align="left" height="600" width="895" scrolling="auto" src="pdf/1FINANCIAL HIGHLIGHTS.pdf"> </iframe></div>
 							</div>
 						</div>

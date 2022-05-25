@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<style>
-				@media only screen and (max-width: 768px) {
+				@media only screen and (max-width: 1000px) {
   /* For mobile phones: */
             .container{
             width: 80%;
@@ -29,6 +29,26 @@
 			padding-left: 1.5rem;
 			border-left: 5px solid #689f38;
 		}
+			.parallax {
+  /* The image used */
+  background-image: url("logo.jpg");
+
+  /* Set a specific height */
+  height: 285vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+	.color-overlay	{
+		width: 100%;
+		height: 285vh;
+		background: #ffffff;
+		opacity: .5;
+		position: absolute;
+}
 	</style>
 </head>
 <body>
@@ -85,7 +105,11 @@
 			</ul>
 
 		<main>
+						<div class="parallax">
+						<div class="color-overlay">					
 	<div class="section">
+			</div>
+ 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col m12">
@@ -164,7 +188,7 @@
 											<li>Php 50.00 monthly for organized group</li>
 									</blockquote>
 									<hr>
-									</div>																
+									</div>															
 										<div class="col m12">
 										<h5 class="center light-green-text darken-2">Schedule of Benefits</h5>
 										<table class="left">
