@@ -85,6 +85,26 @@
 			padding-left: 1.5rem;
 			border-left: 5px solid #689f38;
 		}
+												.parallax {
+  /* The image used */
+  background-image: url("logo.jpg");
+
+  /* Set a specific height */
+  height: 70vh; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+	.color-overlay	{
+		width: 100%;
+		height: 70vh;
+		background: #ffffff;
+		opacity: .5;
+		position: absolute;
+}
 	</style>
 </head>
 <body>
@@ -127,7 +147,11 @@
 		</div>
 	</nav>
 	<main>
+						<div class="parallax">
+						<div class="color-overlay">		
 		<div class="section">
+		</div>
+	</div>
 			<div class="container">
 				<div class="row">
 					<div class="col m12">
@@ -139,17 +163,14 @@
 									<h5 class="light-green-text darken-2">Advisory Council</h5>	
 									<div class="row">
 										<div class="col m3">
-												<a href="albert.html">
 												<img src="images/albert.jpg" alt="" class="materialboxed responsive-img"></a>
 												<h6 class="center black-text darken-2">Alberto L. Tiongson</h6>
 											</div>
 										<div class="col m3">
-												<a href="felina.html">
 												<img src="images/fe.jpg" alt="" class="materialboxed responsive-img"></a>
 											<h6 class="center black-text darken-2">Felina C. Magno</h6>
 										</div>
 										<div class="col m3">
-												<a href="virgilio.html">
 												<img src="images/vir.jpg" alt="" class="materialboxed responsive-img"></a>
 											<h6 class="center black-text darken-2">Virgilio V. Maclang <span></span></h6>
 										</div>																
