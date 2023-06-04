@@ -52,11 +52,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 95vh;
+  height: 245vh;
 }
 	.color-overlay	{
 		width: 100%;
-		height: 95vh;
+		height: 245vh;
 		background: #ffffff;
 		opacity: .5;
 		position: absolute;
@@ -108,6 +108,53 @@ p{
   margin-left: -3px;
   top: 20;
 }
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 1000px) {
+  .text {font-size: 11px}
+}
 
 </style>
 </head>
@@ -122,7 +169,8 @@ p{
 				<li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown4">About Us<i class="material-icons right">arrow_drop_down</i></a><ul id="dropdown4" class="dropdown-content" tabindex="0">
 					<li tabindex="0"><a href="about.html">Our Mission Vission</a></li>
 					<li tabindex="0"><a href="structure.html">Organization Structure</a></li>
-					<li tabindex="0"><a href="bos.html">Board of Trustees & Committees</a></li>
+					<li tabindex="0"><a href="bos.html">Board of Trustees</a></li>
+					<li tabindex="0"><a href="committee.html">Committees</a></li>
 					<li tabindex="0"><a href="staff.html">Office Staff</a></li>
 					<li tabindex="0"><a href="award.html">Awards & Recognition</a></li>
 				</ul></li>
@@ -141,19 +189,88 @@ p{
 		</div>
 	</nav>
 	<main>
-		<div class="slider" style="height: 400px;">
-			<ul class="slides" style="height: 400px;">
+		<div class="slideshow-container">
 
-				<li class="active" style="opacity: 1; transform: translateX(0px) translateY(0px);">
-					<img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background-image: url(&quot;images/ba3.jpg&quot;);"> <!-- random image -->
-				</li>
-				<li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-					<img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background-image: url(&quot;images/ba1.jpg&quot;);"> <!-- random image -->
-				</li>
-				<li class="" style="opacity: 0; transform: translateX(0px) translateY(0px);">
-					<img src="data:image/gif;base64,R0lGODlhAQABAIABAP///wAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="background-image: url(&quot;images/ba2.jpg&quot;);"> <!-- random image -->
-				<ul class="indicators"><li class="indicator-item active"></li><li class="indicator-item"></li><li class="indicator-item"></li><li class="indicator-item"></li></ul>
+			<div class="mySlides fade">
+			  <img src="images/carousel/mbaifront.jpg" style="width:100%">
 			</div>
+
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_JAN2023-1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_DEC2022-2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_DEC2022-3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_NOV2022-4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_NOV2022-5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_SEPT2022-6.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_AUG2022-7.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_AUG2022-8.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_JULY2022-9.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_MAY2022-10.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_APRIL2022-11.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_APRIL2022-12.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_APRIL2022-13.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_FEB2022-14.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_FEB2022-15.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_FEB2022-16.jpg" style="width:100%">
+			</div>
+			<div class="mySlides fade">
+				<img src="images/carousel/AN_DEC2021-17.jpg" style="width:100%">
+			</div>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span>
+			</div>
+			</main>
 		<main>
 						<div class="parallax">
 						<div class="color-overlay">				
@@ -176,7 +293,44 @@ p{
 																				<br><br>
 										Noong ika-28 nang Disyembre, 2016, sa pamamagitan nang Unang Di-Pangkaraniwang Pulong nang mga aktibong kasapi na ginanap sa KB Gymnasium, Guinhawa, City of Malolos, Bulacan, naaprubahan ang pagbabago nang pangalan ng SRCDC MBAI bilang TULUNGAN MUTUAL BENEFIT ASSOCIATION INC. (Formerly: SRCDC MBAI). 
 										</p>
-									</div>
+										<br>
+										<br>
+										<div class="col m12">
+											<center><h5 class="light-green-text darken-2">News and Events</h5>
+											<div>
+												<div class="row">
+													<div class="col m4">
+														<div class="black-text darken-2">Paalala</div>
+														<img src="images/DEC1A.jpg" alt="" class="materialboxed responsive-img"style="border: 1px solid black;"></a></h6>
+														</div>
+														<div class="col m4">
+															<div class="black-text darken-2">Manual Voting 2022</div>
+															<img src="images/DEC12022.jpg" alt="" class="materialboxed responsive-img"style="border: 1px solid black;"></a></h6>
+														</div>
+														<div class="col m4">
+															<div class="black-text darken-2">Paanyaya sa lahat ng Kasapi</div>
+															<img src="images/NOV15A.jpg" alt="" class="materialboxed responsive-img"style="border: 1px solid black; height= 10px;"></a></h6>
+														</div>
+														<div class="col m12">
+															<div>
+																<div class="row">
+																	<br>
+																	<div class="col m4">
+																		<div class="black-text darken-2">Paraan ng Pagboto at Pag-Amyenda</div>
+																		<img src="images/NOV15B.jpg" alt="" class="materialboxed responsive-img"style="border: 1px solid black;"></a></h6>
+																		</div>
+																		<div class="col m4">
+																			<div class="black-text darken-2">Mga Kandidato sa Halalan 2022</div>
+																			<br>
+																			<img src="images/bot2022.jpg" alt="" class="materialboxed responsive-img"style="border: 1px solid black;"></a></h6>
+																		</div>
+																		<div class="col m4">
+																			<div class="black-text darken-2"></div>
+																			<img src="" alt="" class="materialboxed responsive-img"style="border: 0px solid black; height= 10px;"></a></h6>
+																		</div>							
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -185,7 +339,9 @@ p{
 				</div>
 			</div>
 		</div>
+	</div>
 	</main>
+
 			<footer class="page-footer light-green darken-2">
 				<div class="container">
 					<div class="row">
@@ -222,6 +378,25 @@ p{
 						$('.sidenav').sidenav();
 					});
 					
+					let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
 				</script>
 
 			</body>
